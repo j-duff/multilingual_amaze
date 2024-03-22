@@ -8,7 +8,7 @@ Changes from the original:
 - Adjusted candidate inclusion filters: until a user-set minimum candidate set size is achieved (or a user-set maximum search space is exceeded), the script will loop through frequency-bin-matching and length-matching words, backing off progressively to laxer inclusion rules if the minimum isn't met.
 - Added more details in the output file, including a set of backup foils of user-specified size for each position.
 
-On a few pilot runs, this seems to produce good results for simple Hebrew stimuli.
+Thanks to Mandy Cartner for helping tune this for usable output in Hebrew, and identifying a bunch of useful features. On a few pilot runs, this currently seems to produce OK results for simple Hebrew stimuli. 
 
 Features I hope to implement in the future:
 - Including target and foil surprisal and frequency in the output script.
