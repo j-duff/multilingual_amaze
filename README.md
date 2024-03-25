@@ -7,6 +7,7 @@ Changes from the original:
 - Added script-based filters for naively excluding some words in wordfreq frequency dictionaries.
 - Adjusted candidate inclusion filters: until a user-set minimum candidate set size is achieved (or a user-set maximum search space is exceeded), the script will loop through frequency-bin-matching and length-matching words, backing off progressively to laxer inclusion rules if the minimum isn't met.
 - Added more details in the output file, including a set of backup foils of user-specified size for each position.
+- Added preservation of leading and trailing punctuation akin to Boyce et al. (2020).
 
 Thanks to Mandy Cartner for helping tune this for usable output in Hebrew, and identifying a bunch of useful features. On a few pilot runs, this currently seems to produce OK results for simple Hebrew stimuli. 
 
