@@ -1,3 +1,5 @@
+# Multilingual A-Maze foil generation using BERT-like language models and wordfreq
+
 This is a modified version of the A-Maze script by [Yizhi Tang](https://github.com/tangyizhi2000), [Lucy Yu-Chuan Chiang](https://sites.google.com/a/umich.edu/yu-chuan-chiang/home), [Wei-Jie Zhou](https://github.com/tooweisiannn), [Sohee Chung](https://github.com/soheechung), and [Lisa Levinson](https://lisalevinson.github.io/) at the UMich WordLab. Like [their original](https://github.com/UMWordLab/multilingual_amaze), it uses the `minicons` package to query a HuggingFace-hosted transformer model of your choice in order to generate A-Maze foils. 
 
 Also like the original, it runs smoothly on Google Colab! Just click the Colab icon at the top of the script to run it for yourself, no local software necessary.
