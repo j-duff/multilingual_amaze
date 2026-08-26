@@ -1,4 +1,4 @@
-# Multilingual A-Maze foil generation using GPT2-like language models and wordfreq
+# Multilingual A-Maze foil generation using GPT2-like language models
 
 This is a modified version of the A-Maze script by [Yizhi Tang](https://github.com/tangyizhi2000), [Lucy Yu-Chuan Chiang](https://sites.google.com/a/umich.edu/yu-chuan-chiang/home), [Wei-Jie Zhou](https://github.com/tooweisiannn), [Sohee Chung](https://github.com/soheechung), and [Lisa Levinson](https://lisalevinson.github.io/) at the UMich WordLab. Like [their original](https://github.com/UMWordLab/multilingual_amaze), it uses the `minicons` package to query a HuggingFace-hosted transformer model of your choice in order to generate A-Maze foils. 
 
@@ -6,6 +6,7 @@ Also like the original, it runs smoothly on Google Colab! Just click the Colab i
 
 Changes from the original:
 - Now configured to use GPT-like models for surprisal calculation, based on only the prefix.
+- Added a SUBTLEX-based word list for American English that gets rid of some persistent proper-noun foils.
 - Added support for automatically collecting frequency data (for supported languages) through `wordfreq`. See if your language is supported [here](https://pypi.org/project/wordfreq/). Manual CSV upload is still supported if you have it.
 - Added script-based filters for naively excluding some words in wordfreq frequency dictionaries.
 - Adjusted candidate inclusion filters: until a user-set minimum candidate set size is achieved (or a user-set maximum search space is exceeded), the script will loop through frequency-bin-matching and length-matching words, backing off progressively to laxer inclusion rules if the minimum isn't met.
@@ -13,5 +14,4 @@ Changes from the original:
 - Added preservation of leading and trailing punctuation akin to Boyce et al. (2020).
 
 Features I hope to implement in the future:
-- Including target and foil surprisal and frequency in the output script.
 - Generating suitable foils across multiple conditions. (Right now, every sentence in the input may receive a different foil string.)
